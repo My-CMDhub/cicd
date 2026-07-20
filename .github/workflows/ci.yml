@@ -41,7 +41,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-         
 
       - name: Run Prettier check
         run: npm run format:check
+
+      - name: Run ES lint
+        run: npm run lint
+
+      
+
+  
