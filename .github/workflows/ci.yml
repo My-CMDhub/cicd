@@ -17,11 +17,10 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm cache clean --force
-          npm ci
+        run: npm ci
 
       - name: Run Vitest
         run: npm run test  -- --coverage
@@ -38,11 +37,11 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm cache clean --force
-          npm ci
+        run: npm ci
+         
 
       - name: Run Prettier check
         run: npm run format:check
