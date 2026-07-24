@@ -35,7 +35,7 @@ jobs:
         uses: 'google-github-actions/setup-gcloud@v3'
 
       - name: Build and Push Docker Image
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-503113/notely-ar-repo/notely:latest . --region us-central1 --allow-unauthenticated --project notely-503113--max-instances=4
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-503113/notely-ar-repo/notely:latest . --region us-central1 --allow-unauthenticated --project notely-503113 --max-instances=4
 
 
 
