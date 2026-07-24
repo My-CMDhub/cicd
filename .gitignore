@@ -3,3 +3,5 @@ coverage/
 dist/
 .env
 .vscode
+
+.github/workflows/notely-503113-642977b41e0c.json
